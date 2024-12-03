@@ -1,0 +1,169 @@
+﻿{
+  "Scenario": "Forecasting",
+  "DataSource": {
+    "Version": 3,
+    "EscapeCharacter": "\"",
+    "ReadMultiLines": false,
+    "KeepDiacritics": false,
+    "KeepPunctuations": false,
+    "AllowQuoting": false,
+    "Type": "TabularFile",
+    "FilePath": "C:\\Users\\aidan\\Downloads\\gold_price_3_years.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "Date",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Gold_Price_USD_per_Ounce",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "ForecastBySsa",
+        "Score": 119.03816973532054,
+        "RuntimeInSeconds": 0.052,
+        "Parameter": {
+          "_SCHEMA_": "e0",
+          "e0": {
+            "WindowSize": 45,
+            "SeriesLength": 427,
+            "TrainSize": 1095,
+            "Horizon": 10,
+            "OutputColumnName": "Gold_Price_USD_per_Ounce",
+            "InputColumnName": "Gold_Price_USD_per_Ounce",
+            "ConfidenceLowerBoundColumn": "Gold_Price_USD_per_Ounce_LB",
+            "ConfidenceUpperBoundColumn": "Gold_Price_USD_per_Ounce_UB"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "ForecastBySsa",
+        "Score": 119.03816973532054,
+        "RuntimeInSeconds": 0.056,
+        "Parameter": {
+          "_SCHEMA_": "e0",
+          "e0": {
+            "WindowSize": 45,
+            "SeriesLength": 415,
+            "TrainSize": 1095,
+            "Horizon": 10,
+            "OutputColumnName": "Gold_Price_USD_per_Ounce",
+            "InputColumnName": "Gold_Price_USD_per_Ounce",
+            "ConfidenceLowerBoundColumn": "Gold_Price_USD_per_Ounce_LB",
+            "ConfidenceUpperBoundColumn": "Gold_Price_USD_per_Ounce_UB"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "ForecastBySsa",
+        "Score": 119.03816973532054,
+        "RuntimeInSeconds": 0.037,
+        "Parameter": {
+          "_SCHEMA_": "e0",
+          "e0": {
+            "WindowSize": 45,
+            "SeriesLength": 423,
+            "TrainSize": 1095,
+            "Horizon": 10,
+            "OutputColumnName": "Gold_Price_USD_per_Ounce",
+            "InputColumnName": "Gold_Price_USD_per_Ounce",
+            "ConfidenceLowerBoundColumn": "Gold_Price_USD_per_Ounce_LB",
+            "ConfidenceUpperBoundColumn": "Gold_Price_USD_per_Ounce_UB"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "ForecastBySsa",
+        "Score": 119.03816973532054,
+        "RuntimeInSeconds": 0.04,
+        "Parameter": {
+          "_SCHEMA_": "e0",
+          "e0": {
+            "WindowSize": 45,
+            "SeriesLength": 1465,
+            "TrainSize": 1095,
+            "Horizon": 10,
+            "OutputColumnName": "Gold_Price_USD_per_Ounce",
+            "InputColumnName": "Gold_Price_USD_per_Ounce",
+            "ConfidenceLowerBoundColumn": "Gold_Price_USD_per_Ounce_LB",
+            "ConfidenceUpperBoundColumn": "Gold_Price_USD_per_Ounce_UB"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "ForecastBySsa",
+        "Score": 119.03816973532054,
+        "RuntimeInSeconds": 0.039,
+        "Parameter": {
+          "_SCHEMA_": "e0",
+          "e0": {
+            "WindowSize": 45,
+            "SeriesLength": 1468,
+            "TrainSize": 1095,
+            "Horizon": 10,
+            "OutputColumnName": "Gold_Price_USD_per_Ounce",
+            "InputColumnName": "Gold_Price_USD_per_Ounce",
+            "ConfidenceLowerBoundColumn": "Gold_Price_USD_per_Ounce_LB",
+            "ConfidenceUpperBoundColumn": "Gold_Price_USD_per_Ounce_UB"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "ForecastBySsa"
+    },
+    "Schema": "e0",
+    "MetricName": "RMSE",
+    "ModelFilePath": "C:\\Users\\aidan\\Source\\Repos\\Collatz Conjecture WFA\\Collatz Conjecture WFA\\GoldPriceModel.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 5,
+  "TrainingOption": {
+    "Version": 3,
+    "OptimizeMetric": "RMSE",
+    "Subsampling": false,
+    "Type": "ForecastingTrainingOption",
+    "TrainingTime": 60,
+    "UseCrossValidation": false,
+    "Horizon": 10,
+    "TimeColumn": "Date",
+    "LabelColumn": "Gold_Price_USD_per_Ounce",
+    "UseDefaultIndex": false,
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "CrossValidationValidationOption",
+      "NumberOfFolds": 5
+    }
+  }
+}

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collatz Conjecture WFA", "Collatz Conjecture WFA\Collatz Conjecture WFA.csproj", "{C6882C3E-7D00-419C-9A31-2F91953B9734}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YahooFinanceApi", "..\..\..\Downloads\YahooFinanceApi-master\YahooFinanceApi-master\YahooFinanceApi\YahooFinanceApi.csproj", "{1C9C0C41-4D15-465B-8368-B77A5D83D992}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoldPriceModel_ConsoleApp1", "GoldPriceModel_ConsoleApp1\GoldPriceModel_ConsoleApp1.csproj", "{8143911C-1C1E-4F13-A80F-195DE77652C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6882C3E-7D00-419C-9A31-2F91953B9734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6882C3E-7D00-419C-9A31-2F91953B9734}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6882C3E-7D00-419C-9A31-2F91953B9734}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6882C3E-7D00-419C-9A31-2F91953B9734}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C9C0C41-4D15-465B-8368-B77A5D83D992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C9C0C41-4D15-465B-8368-B77A5D83D992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C9C0C41-4D15-465B-8368-B77A5D83D992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C9C0C41-4D15-465B-8368-B77A5D83D992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8143911C-1C1E-4F13-A80F-195DE77652C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8143911C-1C1E-4F13-A80F-195DE77652C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8143911C-1C1E-4F13-A80F-195DE77652C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8143911C-1C1E-4F13-A80F-195DE77652C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44DB4F61-A271-4978-9F74-51B9AAF060A0}
+	EndGlobalSection
+EndGlobal
