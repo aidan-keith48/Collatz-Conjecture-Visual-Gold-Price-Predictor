@@ -1,6 +1,6 @@
 # Collatz Conjecture Visualization & Gold Price Prediction
 
-This repository contains two unique projects that explore mathematical concepts and predictive modeling. Both projects aim to provide interactive and insightful tools for visualization and analysis.
+This repository contains two unique projects that explore mathematical concepts and predictive modeling. Both projects aim to provide interactive and insightful tools for visualization and analysis. Please note that  this is a rough draft and things wont work as intended for now, I will be making fixes in the near future but maybe on a differnt platform that is better suited for this type of visualization.
 
 ---
 
